@@ -35,3 +35,16 @@ USE sql_store;
   SELECT * 
   FROM customers
   WHERE state <> 'va'; 
+  
+  
+   -- We would like to get customer who born after 1990-01-01
+   SELECT * 
+   FROM customers
+   WHERE birth_date > '1990-01-01';
+   
+   -- exercise get the orders placed in this year (2018-01-01)
+   
+   SELECT * 
+   FROM orders
+   WHERE order_date >= '2018-01-01';
+   
